@@ -1,4 +1,4 @@
-<%--
+<%@ page import="ztx.javaweb.bean.Admin" %><%--
   Created by IntelliJ IDEA.
   User: zhangtianxiang
   Date: 2022/6/1
@@ -11,6 +11,18 @@
     <title>$Title$</title>
   </head>
   <body>
-  $END$
+  <script>
+    alert("fuck you")
+  </script>
+  <script>
+    function f() {
+      <%! Admin curAdmin; %>
+      <% curAdmin = (Admin)request.getSession().getAttribute("admin"); %>
+      const msg = <%=request.getParameter("kind")%>;
+      const admin = <%= curAdmin.getName()%>
+              alert(msg+"成功，欢迎"+admin);
+
+    }
+  </script>
   </body>
 </html>

@@ -2,6 +2,7 @@ package ztx.javaweb.dao;
 
 import org.apache.ibatis.session.SqlSession;
 import ztx.javaweb.bean.Admin;
+import ztx.javaweb.mapper.AdminMapper;
 import ztx.javaweb.sql.GetSqlSession;
 
 public class AdminMapperImpl {

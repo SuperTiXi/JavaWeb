@@ -2,6 +2,7 @@ package ztx.javaweb.dao;
 
 import org.apache.ibatis.session.SqlSession;
 import ztx.javaweb.bean.Merchant;
+import ztx.javaweb.mapper.MerchantMapper;
 import ztx.javaweb.sql.GetSqlSession;
 
 public class MerchantMapperImpl {

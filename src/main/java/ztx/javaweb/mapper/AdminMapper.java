@@ -1,4 +1,4 @@
-package ztx.javaweb.dao;
+package ztx.javaweb.mapper;
 
 import ztx.javaweb.bean.Admin;
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="MerchantMapper">
+<mapper namespace="ztx.javaweb.mapper.MerchantMapper">
     <update id="updateMer" parameterType="ztx.javaweb.bean.Merchant">
         update merchant set name = #{name},password = #{password},info = #{info} where id = #{id}
     </update>

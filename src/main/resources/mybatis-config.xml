@@ -17,8 +17,6 @@
     </environments>
     <!--加载映射文件-->
     <mappers >
-<!--        <mapper resource="mapper/adminMap.xml"></mapper>-->
-<!--        <mapper resource="mapper/mapper.xml"></mapper>-->
         <package name="ztx.javaweb.mapper"/>
     </mappers>
 </configuration>

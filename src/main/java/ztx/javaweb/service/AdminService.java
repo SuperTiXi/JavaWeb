@@ -7,6 +7,7 @@ import java.sql.SQLDataException;
 
 public class AdminService {
 
+    AdminMapperImpl adminMapper = new AdminMapperImpl();
     /**
      * 登录
      * @param name 输入的姓名
@@ -15,9 +16,8 @@ public class AdminService {
      */
     public boolean login(String name ,String password){
         boolean flag;
-        AdminMapperImpl adminMapper = new AdminMapperImpl();
         Admin admin = adminMapper.queryAdminByName(name);
-        flag = admin.getPassword() == password;
+        flag = admin.getPassword().equals(password);
 
         return flag;
     }
@@ -25,7 +25,6 @@ public class AdminService {
     public boolean register(String name,String password){
         try{
             boolean flag;
-            AdminMapperImpl adminMapper = new AdminMapperImpl();
             Admin admin = new Admin(name,password);
             flag = adminMapper.insertAdmin(admin);
             return flag;

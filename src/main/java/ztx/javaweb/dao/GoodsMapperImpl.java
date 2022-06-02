@@ -2,6 +2,7 @@ package ztx.javaweb.dao;
 
 import org.apache.ibatis.session.SqlSession;
 import ztx.javaweb.bean.Goods;
+import ztx.javaweb.mapper.GoodsMapper;
 import ztx.javaweb.sql.GetSqlSession;
 
 public class GoodsMapperImpl {
