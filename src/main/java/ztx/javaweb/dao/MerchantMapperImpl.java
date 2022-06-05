@@ -5,6 +5,8 @@ import ztx.javaweb.bean.Merchant;
 import ztx.javaweb.mapper.MerchantMapper;
 import ztx.javaweb.sql.GetSqlSession;
 
+import java.util.List;
+
 public class MerchantMapperImpl {
     SqlSession sqlSession;
     MerchantMapper merchantMapper;
@@ -52,7 +54,15 @@ public class MerchantMapperImpl {
      * @param id 查询商家的ID
      * @return 返回查询到的对象
      */
-    public Merchant queryMerById(int id){
+    public Merchant queryMerById(String id){
         return merchantMapper.queryMerById(id);
+    }
+
+    /**
+     * 获取所有商家信息
+     * @return 商家列表
+     */
+    public List<Merchant> getMerchants(){
+        return merchantMapper.getMerchants();
     }
 }

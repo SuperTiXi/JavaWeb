@@ -8,6 +8,13 @@ public class Merchant {
     private String password;
     private String info;
 
+    private String registerDate;
+
+    public Merchant(String  id, String password) {
+        this.id = id;
+        this.password = password;
+    }
+
     public String getName() {
         return name;
     }
@@ -40,11 +47,20 @@ public class Merchant {
         this.info = info;
     }
 
-    public Merchant(String name, String id, String password, String info) {
+    public String getRegisterDate() {
+        return registerDate;
+    }
+
+    public void setRegisterDate(String registerDate) {
+        this.registerDate = registerDate;
+    }
+
+    public Merchant(String name, String id, String password, String info, String registerDate) {
         this.name = name;
         this.id = id;
         this.password = password;
         this.info = info;
+        this.registerDate = registerDate;
     }
 
     @Override
@@ -54,6 +70,7 @@ public class Merchant {
                 ", id='" + id + '\'' +
                 ", password='" + password + '\'' +
                 ", info='" + info + '\'' +
+                ", registerDate='" + registerDate + '\'' +
                 '}';
     }
 }

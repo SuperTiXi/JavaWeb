@@ -5,7 +5,7 @@
 const signUpButton = document.getElementById('signUp');
 const signInButton = document.getElementById('signIn');
 const container = document.getElementById('container');
-const btn_Register = document.getElementById('btn_Register');
+const btn_Merchant = document.getElementById('btn_Merchant');
 const btn_Login = document.getElementById('btn_Login');
 
 /**
@@ -20,11 +20,11 @@ signInButton.addEventListener('click', () => {
 });
 
 /**
- * 注册
+ * 商家登录
  */
-btn_Register.addEventListener('click',()=>{
-    const name = document.getElementById('name_Register').value;
-    const password = document.getElementById('password_Register').value;
+btn_Merchant.addEventListener('click',()=>{
+    const name = document.getElementById('name_Merchant').value;
+    const password = document.getElementById('password_Merchant').value;
     if(isEmpty(name)){
         alert("姓名不能为空");
         return;
@@ -34,7 +34,7 @@ btn_Register.addEventListener('click',()=>{
         return;
     }
 
-    document.getElementById('registerInfo').submit();
+    document.getElementById('merchantLogin').submit();
 });
 
 /**
@@ -62,3 +62,5 @@ function isEmpty(str){
     }
     return false;
 }
+
+

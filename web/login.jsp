@@ -16,34 +16,35 @@
 
 <body>
 
+
 <div class="container" id="container">
     <div class="form-container sign-up-container">
-        <form id = "registerInfo" action="RegisterServlet" method="post">
-            <h1>Create Account</h1>
+        <form id = "merchantLogin" action="MerchantServlet" method="post">
+            <h1>Merchant Login</h1>
             <div class="social-container">
                 <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
                 <a href="#" class="social"><i class="fab fa-google-plus-g" ></i></a>
                 <a href="#" class="social"><i class="fab fa-linkedin-in" ></i></a>
             </div>
-            <span>or use your email for registration</span>
-            <input type="text" placeholder="Name" id="name_Register" name = "name_Register"/>
-            <input type="password" placeholder="Password" id="password_Register" name = "password_Register"/>
+            <span>or use your account</span>
+            <input type="text" placeholder="ID" id="name_Merchant" name = "name_Merchant"/>
+            <input type="password" placeholder="Password" id="password_Merchant" name = "password_Merchant"/>
             <script>
-                const msg =<%=request.getParameter("msg")%>;
-                const name = <%=request.getParameter("name")%>
-                if(msg!==null){
+                const msg ="<%=request.getParameter("msg")%>";
+                const name = "<%=request.getParameter("name")%>";
+                if(msg!=='null'){
                     alert(msg)
                 }
-                else if(name!==null){
-                    document.getElementById("name_Register").value = name;
+                else if(name!=='null'){
+                    document.getElementById("name_Merchant").value = name;
                 }
             </script>
-            <button  id = "btn_Register">Sign Up</button>
+            <button  id = "btn_Merchant">Sign In</button>
         </form>
     </div>
     <div class="form-container sign-in-container">
         <form id = "loginInfo" action="LoginServlet" method="post">
-            <h1>Sign in</h1>
+            <h1>Admin Login</h1>
             <div class="social-container">
                 <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
                 <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
@@ -53,8 +54,8 @@
             <input type="text" placeholder="Name" id = "name_Login" name="name_Login" />
             <input type="password" placeholder="Password" id="password_Login" name = "password_Login"/>
             <script>
-                const msg =<%=request.getParameter("msg")%>;
-                const name = <%=request.getParameter("name")%>
+                const msg ="<%=request.getParameter("msg")%>";
+                const name = "<%=request.getParameter("name")%>";
                 if(msg!==null){
                     alert(msg)
                 }
@@ -68,14 +69,14 @@
     <div class="overlay-container">
         <div class="overlay">
             <div class="overlay-panel overlay-left">
-                <h1>Welcome Back!</h1>
+                <h1>Welcome Back Merchant!</h1>
                 <p>To keep connected with us please login with your personal info</p>
                 <button class="ghost" id="signIn">Sign In</button>
             </div>
             <div class="overlay-panel overlay-right">
-                <h1>Hello, Friend!</h1>
-                <p>Enter your personal details and start journey with us</p>
-                <button class="ghost" id="signUp">Sign Up</button>
+                <h1>Welcome Back Admin!</h1>
+                <p>To keep connected with us please login with your personal info</p>
+                <button class="ghost" id="signUp">Sign In</button>
             </div>
         </div>
     </div>

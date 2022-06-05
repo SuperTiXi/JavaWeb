@@ -2,6 +2,8 @@ package ztx.javaweb.mapper;
 
 import ztx.javaweb.bean.Merchant;
 
+import java.util.List;
+
 /**
  * 商家接口
  */
@@ -33,5 +35,11 @@ public interface MerchantMapper {
      * @param id 查询商家的ID
      * @return 返回查询到的对象
      */
-    public Merchant queryMerById(int id);
+    public Merchant queryMerById(String id);
+
+    /**
+     * 获取所有商家信息
+     * @return 商家列表
+     */
+    public List<Merchant> getMerchants();
 }

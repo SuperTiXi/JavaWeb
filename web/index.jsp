@@ -1,4 +1,5 @@
-<%@ page import="ztx.javaweb.bean.Admin" %><%--
+<%@ page import="ztx.javaweb.bean.Admin" %>
+<%--
   Created by IntelliJ IDEA.
   User: zhangtianxiang
   Date: 2022/6/1
@@ -8,20 +9,18 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
   <head>
-    <title>$Title$</title>
+    <title>商家管理</title>
   </head>
   <body>
+  <button onclick="f()">按钮</button>
   <script>
-    alert("fuck you")
-  </script>
-  <script>
-    function f() {
+    function f()
+    {
       <%! Admin curAdmin; %>
       <% curAdmin = (Admin)request.getSession().getAttribute("admin"); %>
-      const msg = <%=request.getParameter("kind")%>;
-      const admin = <%= curAdmin.getName()%>
-              alert(msg+"成功，欢迎"+admin);
-
+      const msg = "<%=request.getAttribute("kind")%>";
+      const admin = "<%= curAdmin.getName()%>";
+              alert(msg + "成功，欢迎" + admin);
     }
   </script>
   </body>

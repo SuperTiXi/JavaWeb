@@ -2,19 +2,24 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="ztx.javaweb.mapper.MerchantMapper">
     <update id="updateMer" parameterType="ztx.javaweb.bean.Merchant">
-        update merchant set name = #{name},password = #{password},info = #{info} where id = #{id}
+        update merchant set name = #{name},password = #{password},info = #{info},registerDate = #{registerDate} where id = #{id}
     </update>
 
-    <delete id="deleteMerById" parameterType="int" >
+    <delete id="deleteMerById" parameterType="String" >
         delete from merchant where id = #{id}
     </delete>
 
-    <select id="selectMerById" parameterType="int" resultType="ztx.javaweb.bean.Merchant">
+    <select id="queryMerById" parameterType="String" resultType="ztx.javaweb.bean.Merchant">
         select * from merchant where id = #{id}
     </select>
 
     <insert id="insertMer" parameterType="ztx.javaweb.bean.Merchant" >
-        insert  into merchant (name,password,info) values (#{name},#{password},#{info})
+        insert  into merchant (name,password,info,registerDate) values (#{name},#{password},#{info},#{registerDate})
     </insert>
+
+    <select id="getMerchants" resultType="ztx.javaweb.bean.Merchant">
+        select * from merchant
+    </select>
+
 
 </mapper>

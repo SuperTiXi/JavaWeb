@@ -3,31 +3,31 @@ package ztx.javaweb.controller;
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
-import ztx.javaweb.bean.Admin;
-import ztx.javaweb.service.AdminService;
+import ztx.javaweb.bean.Merchant;
+import ztx.javaweb.service.MerchantService;
 
 import java.io.IOException;
 
 @WebServlet(name = "RegisterServlet", value = "/RegisterServlet")
-public class RegisterServlet extends HttpServlet {
+public class MerchantServlet extends HttpServlet {
 
-    AdminService adminService = new AdminService();
+    MerchantService merchantService = new MerchantService();
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String name = request.getParameter("name_Register");
-        String password = request.getParameter("password_Register");
+        String id =request.getParameter("name_Merchant");
+        String password = request.getParameter("password_Merchant");
 
-        boolean flag = adminService.register(name,password);
+        boolean flag = merchantService.login(id,password);
 
         if(flag){
-            request.getSession().setAttribute("admin",new Admin(name,password));
-            request.setAttribute("kind","注册");
+            request.getSession().setAttribute("merchant",new Merchant(id,password));
+            request.setAttribute("kind","登录");
             request.getRequestDispatcher("/index.jsp").forward(request,response);
         }
         else{
-            request.setAttribute("msg","注册失败");
-            request.setAttribute("name",name);
+            request.setAttribute("msg","登录失败");
+            request.setAttribute("name",id);
             request.setAttribute("password",password);
             request.getRequestDispatcher("/login.jsp").forward(request,response);
         }

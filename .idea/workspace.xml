@@ -9,28 +9,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0fc8751-34ce-40f3-9aca-08d51f3f35d9" name="Changes" comment="Add AdminService">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ztx/javaweb/controller/LoginServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ztx/javaweb/controller/RegisterServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ztx/javaweb/test/SqlTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/js/login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/login.jsp" afterDir="false" />
+    <list default="true" id="e0fc8751-34ce-40f3-9aca-08d51f3f35d9" name="Changes" comment="complete login ui">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ztx/javaweb/controller/MerchantListServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/jakarta.servlet.jsp.jstl-2.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/googleapis.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/merchantManage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/merchantManage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/merchantManage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ztx/javaweb/dao/AdminMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ztx/javaweb/mapper/AdminMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ztx/javaweb/dao/AdminMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ztx/javaweb/dao/AdminMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ztx/javaweb/dao/GoodsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ztx/javaweb/mapper/GoodsMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ztx/javaweb/dao/GoodsMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ztx/javaweb/dao/GoodsMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ztx/javaweb/dao/MerchantMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ztx/javaweb/mapper/MerchantMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ztx/javaweb/bean/Merchant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ztx/javaweb/bean/Merchant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ztx/javaweb/controller/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ztx/javaweb/controller/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ztx/javaweb/controller/RegisterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ztx/javaweb/controller/MerchantServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ztx/javaweb/dao/MerchantMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ztx/javaweb/dao/MerchantMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ztx/javaweb/service/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ztx/javaweb/service/AdminService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/AdminMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ztx/javaweb/mapper/AdminMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/GoodsMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ztx/javaweb/mapper/GoodsMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/MerchantMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ztx/javaweb/mapper/MerchantMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ztx/javaweb/mapper/MerchantMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ztx/javaweb/mapper/MerchantMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ztx/javaweb/mapper/MerchantMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ztx/javaweb/mapper/MerchantMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ztx/javaweb/service/MerchantService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ztx/javaweb/service/MerchantService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ztx/javaweb/test/SqlTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ztx/javaweb/test/SqlTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/login.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,8 +43,8 @@
       <list>
         <option value="Interface" />
         <option value="Tag Library Descriptor" />
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -68,17 +69,21 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/IDEA-workspace/JavaWeb/web",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "last_opened_file_path": "D:/IDEA-workspace/JavaWeb/web/WEB-INF/lib",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.3229885",
+    "settings.editor.selected.configurable": "preferences.externalResources"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IDEA-workspace\JavaWeb\web\WEB-INF\lib" />
       <recent name="D:\IDEA-workspace\JavaWeb\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IDEA-workspace\JavaWeb\web\WEB-INF\lib" />
+      <recent name="D:\IDEA-workspace\JavaWeb\web" />
       <recent name="D:\IDEA-workspace\JavaWeb\src\main\java\ztx\javaweb" />
     </key>
   </component>
@@ -94,6 +99,94 @@
       </extension>
       <method v="2">
         <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 10.0.20" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.0.20" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="$USER_HOME$/.jdks/corretto-17.0.3" nameIsGenerated="true">
+      <option name="BROWSER_ID" value="37cae5b9-e8b2-4949-9172-aafa37fbc09c" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="JavaWeb:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/JavaWeb_war_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="e47836a6-61aa-4b95-9251-301e6483bc07" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="50688" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="JavaWeb:war exploded" />
+        </option>
       </method>
     </configuration>
     <configuration name="Smart Tomcat" type="com.poratu.idea.plugins.tomcat" factoryName="SMART_TOMCAT_FACTORY">
@@ -122,9 +215,7 @@
       <option name="adminPort" value="8005" />
       <option name="contextPath" value="" />
       <option name="docBase" value="" />
-      <option name="envOptions">
-        <map />
-      </option>
+      <option name="envOptions" />
       <option name="passParentEnvironmentVariables" value="true" />
       <option name="port" value="8080" />
       <option name="tomcatInfo">
@@ -143,6 +234,7 @@
     <list>
       <item itemvalue="Application.SqlTest" />
       <item itemvalue="Smart Tomcat.Smart Tomcat" />
+      <item itemvalue="Tomcat Server.Tomcat 10.0.20" />
     </list>
     <recent_temporary>
       <list>
@@ -159,7 +251,13 @@
       <option name="presentableId" value="Default" />
       <updated>1654088382940</updated>
       <workItem from="1654088384306" duration="13746000" />
-      <workItem from="1654139709466" duration="13280000" />
+      <workItem from="1654139709466" duration="13320000" />
+      <workItem from="1654166754561" duration="10529000" />
+      <workItem from="1654179836988" duration="1575000" />
+      <workItem from="1654325811985" duration="3283000" />
+      <workItem from="1654347352651" duration="7000" />
+      <workItem from="1654409706039" duration="4203000" />
+      <workItem from="1654415485960" duration="13367000" />
     </task>
     <task id="LOCAL-00001" summary="Basically Complete Data Structure">
       <created>1654100225358</created>
@@ -175,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654102238282</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="complete login ui">
+      <created>1654153067854</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1654153067854</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,6 +301,11 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Basically Complete Data Structure" />
     <MESSAGE value="Add AdminService" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add AdminService" />
+    <MESSAGE value="complete login ui" />
+    <option name="LAST_COMMIT_MESSAGE" value="complete login ui" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
