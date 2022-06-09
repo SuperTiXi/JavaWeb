@@ -21,7 +21,7 @@ public interface MerchantMapper {
      * @param id 要删除商家的Id
      * @return 是否删除成功
      */
-    public boolean deleteMerById(int id);
+    public boolean deleteMerById(String id);
 
     /**
      * 更新商家信息

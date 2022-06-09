@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ztx.javaweb.mapper.GoodsMapper">
+    <insert id="insertGoods" parameterType="ztx.javaweb.bean.Goods">
+        insert into goods(name,belong,price,info,picture) values (#{name},#{belong},#{price},#{info},#{picture})
+    </insert>
+
+    <select id="queryGoodsById" parameterType="int" resultType="ztx.javaweb.bean.Goods">
+        select * from goods where id = #{id}
+    </select>
+
+    <delete id="deleteGoodsById" parameterType="int">
+        delete from goods where id = #{id}
+    </delete>
+
+    <update id="updateGoods" parameterType="ztx.javaweb.bean.Goods">
+        update goods set name = #{name},belong  = #{belong},price = #{price},info = #{info},picture = #{picture} where id = #{id}
+    </update>
+</mapper>

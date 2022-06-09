@@ -8,8 +8,8 @@ import ztx.javaweb.service.MerchantService;
 
 import java.io.IOException;
 
-@WebServlet(name = "RegisterServlet", value = "/RegisterServlet")
-public class MerchantServlet extends HttpServlet {
+@WebServlet(name = "MerchantLoginServlet", value = "/merchantLoginServlet")
+public class MerchantLoginServlet extends HttpServlet {
 
     MerchantService merchantService = new MerchantService();
 
@@ -23,7 +23,8 @@ public class MerchantServlet extends HttpServlet {
         if(flag){
             request.getSession().setAttribute("merchant",new Merchant(id,password));
             request.setAttribute("kind","登录");
-            request.getRequestDispatcher("/index.jsp").forward(request,response);
+            request.setAttribute("belong",id);
+            request.getRequestDispatcher("/goodsManage.jsp").forward(request,response);
         }
         else{
             request.setAttribute("msg","登录失败");

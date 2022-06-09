@@ -27,12 +27,12 @@ public class AdminMapperImpl {
     }
 
     /**
-     * 根据名字删除Admin
-     * @param name 要删除的姓名
+     * 根据id删除Admin
+     * @param id 要删除的姓名
      * @return 是否删除成功
      */
-    public boolean deleteAdminByName(String name){
-        boolean flag = adminMapper.deleteAdminByName(name);
+    public boolean deleteAdminById(String id){
+        boolean flag = adminMapper.deleteAdminById(id);
         sqlSession.commit();
         return flag;
     }

@@ -1,6 +1,8 @@
 package ztx.javaweb.bean;
 
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class Merchant {
     private String name;
@@ -53,6 +55,16 @@ public class Merchant {
 
     public void setRegisterDate(String registerDate) {
         this.registerDate = registerDate;
+    }
+
+    public Merchant(String name, String id, String password, String info) {
+        this.name = name;
+        this.id = id;
+        this.password = password;
+        this.info = info;
+        Date date = new Date();
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        this.registerDate = simpleDateFormat.format(date);
     }
 
     public Merchant(String name, String id, String password, String info, String registerDate) {

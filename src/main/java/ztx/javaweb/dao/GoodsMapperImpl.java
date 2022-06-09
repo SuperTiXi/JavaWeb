@@ -55,4 +55,8 @@ public class GoodsMapperImpl {
     public Goods queryGoodsById(int id){
         return goodsMapper.queryGoodsById(id);
     }
+
+    public SqlSession getSqlSession() {
+        return sqlSession;
+    }
 }

@@ -32,7 +32,7 @@ public class MerchantMapperImpl {
      * @param id 要删除商家的Id
      * @return 是否删除成功
      */
-    public boolean deleteMerById(int id){
+    public boolean deleteMerById(String id){
         boolean flag = merchantMapper.deleteMerById(id);
         sqlSession.commit();
         return flag;
@@ -64,5 +64,9 @@ public class MerchantMapperImpl {
      */
     public List<Merchant> getMerchants(){
         return merchantMapper.getMerchants();
+    }
+
+    public SqlSession getSqlSession() {
+        return sqlSession;
     }
 }

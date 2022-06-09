@@ -14,7 +14,7 @@
     </select>
 
     <insert id="insertMer" parameterType="ztx.javaweb.bean.Merchant" >
-        insert  into merchant (id,name,password,info,registerDate) values (#{id},#{name},#{password},#{info},#{registerDate})
+        insert  into merchant (name,password,info,registerDate) values (#{name},#{password},#{info},#{registerDate})
     </insert>
 
     <select id="getMerchants" resultType="ztx.javaweb.bean.Merchant">

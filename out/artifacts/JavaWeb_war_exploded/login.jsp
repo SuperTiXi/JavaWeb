@@ -19,7 +19,7 @@
 
 <div class="container" id="container">
     <div class="form-container sign-up-container">
-        <form id = "merchantLogin" action="merchantLoginServlet" method="post">
+        <form id = "merchantLogin" action="MerchantServlet" method="post">
             <h1>Merchant Login</h1>
             <div class="social-container">
                 <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
@@ -71,12 +71,12 @@
             <div class="overlay-panel overlay-left">
                 <h1>Welcome Back Merchant!</h1>
                 <p>To keep connected with us please login with your personal info</p>
-                <button class="ghost" id="signIn">Sign In As Admin</button>
+                <button class="ghost" id="signIn">Sign In</button>
             </div>
             <div class="overlay-panel overlay-right">
                 <h1>Welcome Back Admin!</h1>
                 <p>To keep connected with us please login with your personal info</p>
-                <button class="ghost" id="signUp">Sign In As Merchant</button>
+                <button class="ghost" id="signUp">Sign In</button>
             </div>
         </div>
     </div>
