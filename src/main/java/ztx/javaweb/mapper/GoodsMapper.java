@@ -2,6 +2,8 @@ package ztx.javaweb.mapper;
 
 import ztx.javaweb.bean.Goods;
 
+import java.util.List;
+
 /**
  * Goods接口
  */
@@ -34,4 +36,10 @@ public interface GoodsMapper {
      * @return 返回对象
      */
     public Goods queryGoodsById(int id);
+
+    /**
+     * 获取Goods列表
+     * @return
+     */
+    public List<Goods> getGoodsList();
 }

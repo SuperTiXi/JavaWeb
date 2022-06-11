@@ -5,6 +5,8 @@ import ztx.javaweb.bean.Goods;
 import ztx.javaweb.mapper.GoodsMapper;
 import ztx.javaweb.sql.GetSqlSession;
 
+import java.util.List;
+
 public class GoodsMapperImpl {
     SqlSession sqlSession;
     GoodsMapper goodsMapper;
@@ -54,6 +56,14 @@ public class GoodsMapperImpl {
      */
     public Goods queryGoodsById(int id){
         return goodsMapper.queryGoodsById(id);
+    }
+
+    /**
+     * 获取Goods列表
+     * @return
+     */
+    public List<Goods> getGoodsList(){
+        return goodsMapper.getGoodsList();
     }
 
     public SqlSession getSqlSession() {

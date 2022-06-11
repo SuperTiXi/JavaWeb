@@ -12,3 +12,7 @@ $(".form-control").keydown(function (event) {
         temp.submit();
     }
 })
+
+function sendId(id){
+    $("#getId").val(id);
+}

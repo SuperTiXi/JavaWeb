@@ -8,3 +8,10 @@ $(".form-control").keydown(function (event) {
         temp.submit();
     }
 })
+
+function modify(id,creator,picture,merchant) {
+        document.getElementById("getId").value = id;
+        document.getElementById("getBelong2").value = creator;
+        document.getElementById("picture").value = picture;
+}
+

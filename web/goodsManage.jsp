@@ -1,5 +1,6 @@
 <%@ page import="ztx.javaweb.bean.Goods" %>
-<%@ page import="java.util.List" %><%--
+<%@ page import="java.util.List" %>
+<%@ page import="ztx.javaweb.bean.Merchant" %><%--
   Created by IntelliJ IDEA.
   User: zhangtianxiang
   Date: 2022/6/9
@@ -19,6 +20,7 @@
     <script language="JavaScript" src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="css/googleapis.css">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
     <style>
         @import url(css/input.css);
         @import url(css/datatable.css);
@@ -34,7 +36,9 @@
 <%! List<Goods> list; int i;%>
 <% list = (List<Goods>) request.getAttribute("goodsList");
     i =0;
+
 %>
+
 <script language="JavaScript" type="application/javascript">
     function del(id) {
         if(confirm("确定删除该条记录吗？")){
@@ -44,16 +48,8 @@
 </script>
 
 <script language="JavaScript" type="application/javascript">
-    function modify(id) {
-        if(confirm("确定修改该条记录吗？")){
-            location.href = "GoodsListServlet?id=" + id+"&model=modify";
-        }
-    }
-</script>
-
-<script language="JavaScript" type="application/javascript">
     function flash() {
-        location.href = "GoodsListServlet?model="+"";
+        location.href = "GoodsListServlet?model="+"init";
     }
 </script>
 
@@ -66,7 +62,7 @@
                 </div>
                 <div class="col-sm-8">
                     <a href="#" class="btn btn-primary" id = "btn-primary" onclick="flash()"><i class="material-icons">&#xE863;</i> <span>刷新</span></a>
-                    <a href="#popup" class="btn btn-add" id = "btn-add" onclick="add()"><i class="fa fa-plus fa-lg" aria-hidden="true"></i><span>添加商家</span></a>
+                    <a href="#popup" class="btn btn-add" id = "btn-add"><i class="fa fa-plus fa-lg" aria-hidden="true"></i><span>添加商品</span></a>
                 </div>
             </div>
         </div>
@@ -105,7 +101,7 @@
                 <td><%=m.getBelong()%></td>
                 <td><%=m.getInfo()%></td>
                 <td><a href="#" onclick="del(<%=m.getId()%>)"><i class="fa fa-trash fa-lg" aria-hidden="true"></i></a>
-                    <a href="#" onclick="modify(<%=m.getId()%>)"><i class="fa fa-cog fa-lg" aria-hidden="true"></i></a></td>
+                    <a href="#popup-modify" onclick="modify(<%=m.getId()%>,<%=m.getBelong()%>,<%=m.getPicture()%>,<%=request.getAttribute("belong")%>)" id ="modify-btn"><i class="fa fa-cog fa-lg" aria-hidden="true"></i></a></td>
             </tr>
             <%}%>
             <div class="container">
@@ -116,7 +112,7 @@
                             <img src="image/1610264759936.jpg" alt="">
                         </div>
                         <div class="popup__text">
-                            <form id = "Addinfo" action="merchantManage" method="post">
+                            <form id = "Addinfo" action="GoodsListServlet" method="post">
                                 <label for="id" class="inp">
                                     <input type="text" id="id" placeholder="" name ="id-input">
                                     <span class="label">ID</span>
@@ -129,8 +125,8 @@
                                     <span class="focus-bg"></span>
                                 </label>
 
-                                <label for="password" class="inp">
-                                    <input type="text" id="password" placeholder="" name = "password-input">
+                                <label for="price" class="inp">
+                                    <input type="text" id="price" placeholder="" name = "price-input">
                                     <span class="label">PRICE</span>
                                     <span class="focus-bg"></span>
                                 </label>
@@ -149,13 +145,50 @@
                         <a class="popup__close" href="#">X</a>
                     </div>
                 </div>
+                <div class="popup" id="popup-modify">
+                    <div class="popup-inner">
+                        <div class="popup__photo">
+                            <img src="image/1610264759936.jpg" alt="">
+                        </div>
+                        <div class="popup__text">
+                            <form id = "Modifyinfo" action="GoodsListServlet" method="post">
+
+                                <label for="name-modify" class="inp">
+                                    <input type="text" id="name-modify" placeholder="" name = "name-input">
+                                    <span class="label">NAME</span>
+                                    <span class="focus-bg"></span>
+                                </label>
+
+                                <label for="price-modify" class="inp">
+                                    <input type="text" id="price-modify" placeholder="" name = "price-input">
+                                    <span class="label">PRICE</span>
+                                    <span class="focus-bg"></span>
+                                </label>
+
+                                <label for="info-modify" class="inp">
+                                    <input type="text" id="info-modify" placeholder="" name = "info-input">
+                                    <span class="label">INFORMATION</span>
+                                    <span class="focus-bg"></span>
+                                </label>
+                                <input type="text" value="modify" name = "model" hidden>
+                                <input type="text" value="" name = "modifyId" id="getId" hidden>
+                                <input type="text" value="" name = "creator" id="getBelong2" hidden>
+                                <input type="text" value="" name = "picture" id="picture" hidden>
+                                <button id = "btn_Modify" type="submit">Modify</button>
+
+                            </form>
+
+                        </div>
+                        <a class="popup__close" href="#">X</a>
+                    </div>
+                </div>
             </div>
 
         </table>
 
     </div>
 </div>
-
+<script src="js/goodsManage.js"></script>
 <script src="js/datatable.js"></script>
 </body>
 </html>

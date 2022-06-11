@@ -21,15 +21,11 @@ public class MerchantLoginServlet extends HttpServlet {
         boolean flag = merchantService.login(id,password);
 
         if(flag){
-            request.getSession().setAttribute("merchant",new Merchant(id,password));
-            request.setAttribute("kind","登录");
-            request.setAttribute("belong",id);
-            request.getRequestDispatcher("/goodsManage.jsp").forward(request,response);
+            request.getSession().setAttribute("belong",id);
+            request.getRequestDispatcher("/GoodsListServlet").forward(request,response);
         }
         else{
             request.setAttribute("msg","登录失败");
-            request.setAttribute("name",id);
-            request.setAttribute("password",password);
             request.getRequestDispatcher("/login.jsp").forward(request,response);
         }
     }

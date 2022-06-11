@@ -16,7 +16,6 @@
 
 <body>
 
-
 <div class="container" id="container">
     <div class="form-container sign-up-container">
         <form id = "merchantLogin" action="merchantLoginServlet" method="post">

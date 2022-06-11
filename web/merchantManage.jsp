@@ -21,6 +21,7 @@
     <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <script language="JavaScript" src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
 
     <link rel="stylesheet" type="text/css" href="css/merchantManage.css">
     <link rel="stylesheet" type="text/css" href="css/googleapis.css">
@@ -47,13 +48,6 @@
     }
 </script>
 
-<script language="JavaScript" type="application/javascript">
-    function modify(id) {
-        if(confirm("确定修改该条记录吗？")){
-            location.href = "merchantManage?id=" + id+"&model=modify";
-        }
-    }
-</script>
 
 <script language="JavaScript" type="application/javascript">
     function flash() {
@@ -109,11 +103,10 @@
                     <td><%=m.getRegisterDate()%></td>
                     <td><%=m.getInfo()%></td>
                     <td><a href="#" onclick="del(<%=m.getId()%>)"><i class="fa fa-trash fa-lg" aria-hidden="true"></i></a>
-                        <a href="#" onclick="modify(<%=m.getId()%>)"><i class="fa fa-cog" aria-hidden="true"></i></a></td>
+                        <a href="#popup-modify" onclick="sendId(<%=m.getId()%>)"><i class="fa fa-cog" aria-hidden="true"></i></a></td>
                 </tr>
             <%}%>
             <div class="container">
-<%--                <a class="button" href="#popup">Open Modal</a>--%>
                 <div class="popup" id="popup">
                     <div class="popup-inner">
                         <div class="popup__photo">
@@ -155,6 +148,43 @@
                 </div>
             </div>
 
+            <div class="container">
+                <div class="popup" id="popup-modify">
+                    <div class="popup-inner">
+                        <div class="popup__photo">
+                            <img src="image/1610264759936.jpg" alt="">
+                        </div>
+                        <div class="popup__text">
+                            <form id = "Modifyinfo" action="merchantManage" method="post">
+
+                                <label for="name-modify" class="inp">
+                                    <input type="text" id="name-modify" placeholder="" name = "name-input">
+                                    <span class="label">NAME</span>
+                                    <span class="focus-bg"></span>
+                                </label>
+
+                                <label for="password-modify" class="inp">
+                                    <input type="text" id="password-modify" placeholder="" name = "password-input">
+                                    <span class="label">PASSWORD</span>
+                                    <span class="focus-bg"></span>
+                                </label>
+
+                                <label for="info-modify" class="inp">
+                                    <input type="text" id="info-modify" placeholder="" name = "info-input">
+                                    <span class="label">INFORMATION</span>
+                                    <span class="focus-bg"></span>
+                                </label>
+                                <input type="text" value="modify" name = "model" hidden>
+                                <input type="text" value="" name = "modifyId" id = "getId" hidden>
+                                <button id = "btn-modify" type="submit">Modify</button>
+
+                            </form>
+
+                        </div>
+                        <a class="popup__close" href="#">X</a>
+                    </div>
+                </div>
+            </div>
         </table>
 
     </div>

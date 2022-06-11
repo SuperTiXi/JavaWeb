@@ -6,6 +6,8 @@ import ztx.javaweb.bean.Merchant;
 import ztx.javaweb.dao.GoodsMapperImpl;
 import ztx.javaweb.dao.MerchantMapperImpl;
 
+import java.util.List;
+
 
 public class MerchantService {
     MerchantMapperImpl merchantMapper = new MerchantMapperImpl();
@@ -20,6 +22,9 @@ public class MerchantService {
     public boolean login(String id ,String password){
         boolean flag;
         Merchant merchant = merchantMapper.queryMerById(id);
+        if(merchant==null){
+            return false;
+        }
         flag = merchant.getPassword().equals(password);
 
         return flag;
@@ -65,5 +70,13 @@ public class MerchantService {
      */
     public Goods queryGoodsById(int id){
         return goodsMapper.queryGoodsById(id);
+    }
+
+    /**
+     * 获取Goods列表
+     * @return
+     */
+    public List<Goods> getGoodsList(){
+        return goodsMapper.getGoodsList();
     }
 }

@@ -5,8 +5,6 @@ import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
 import ztx.javaweb.bean.Merchant;
 import ztx.javaweb.service.AdminService;
-import ztx.javaweb.service.MerchantService;
-
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -43,6 +41,17 @@ public class MerchantListServlet extends HttpServlet {
             merchants.add(adminService.queryMerById(id));
             req.setAttribute("merchantList", merchants);
             req.getRequestDispatcher("/merchantManage.jsp").forward(req, resp);
+        }else if(model.equals("modify")){
+            String id = req.getParameter("modifyId");
+            String name = req.getParameter("name-input");
+            String password = req.getParameter("password-input");
+            String info = req.getParameter("info-input");
+            Merchant merchant = new Merchant(name,id,password,info);
+            if(adminService.updateMer(merchant)){
+                List<Merchant> merchants = adminService.getMerchants();
+                req.setAttribute("merchantList", merchants);
+                req.getRequestDispatcher("/merchantManage.jsp").forward(req, resp);
+            }
         }
         else if(model.equals("init")){
             List<Merchant> merchants = adminService.getMerchants();

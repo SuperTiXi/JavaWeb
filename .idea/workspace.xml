@@ -9,28 +9,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0fc8751-34ce-40f3-9aca-08d51f3f35d9" name="Changes" comment="complete merchantManage ui">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ztx/javaweb/controller/GoodsListServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/datatable.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/goodsManage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/input.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/goodsManage.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/image/1610264759936.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/js/datatable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/js/goodsManage.js" afterDir="false" />
+    <list default="true" id="e0fc8751-34ce-40f3-9aca-08d51f3f35d9" name="Changes" comment="complete goodsManage ui &#10;write merchantManage service">
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ztx/javaweb/util/StrUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ztx/javaweb/bean/Merchant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ztx/javaweb/bean/Merchant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ztx/javaweb/controller/GoodsListServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ztx/javaweb/controller/GoodsListServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ztx/javaweb/controller/MerchantListServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ztx/javaweb/controller/MerchantListServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ztx/javaweb/controller/MerchantServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ztx/javaweb/controller/MerchantLoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ztx/javaweb/dao/AdminMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ztx/javaweb/dao/AdminMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ztx/javaweb/controller/MerchantLoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ztx/javaweb/controller/MerchantLoginServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ztx/javaweb/dao/GoodsMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ztx/javaweb/dao/GoodsMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ztx/javaweb/dao/MerchantMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ztx/javaweb/dao/MerchantMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ztx/javaweb/mapper/AdminMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ztx/javaweb/mapper/AdminMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ztx/javaweb/mapper/MerchantMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ztx/javaweb/mapper/MerchantMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ztx/javaweb/mapper/GoodsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ztx/javaweb/mapper/GoodsMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ztx/javaweb/mapper/GoodsMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ztx/javaweb/mapper/GoodsMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ztx/javaweb/mapper/MerchantMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ztx/javaweb/mapper/MerchantMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ztx/javaweb/service/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ztx/javaweb/service/AdminService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ztx/javaweb/service/MerchantService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ztx/javaweb/service/MerchantService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/merchantManage.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/merchantManage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/goodsManage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/goodsManage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/goodsManage.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/goodsManage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/js/merchantManage.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/merchantManage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/login.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/merchantManage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/merchantManage.jsp" afterDir="false" />
@@ -45,8 +37,8 @@
       <list>
         <option value="Interface" />
         <option value="Tag Library Descriptor" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -261,7 +253,10 @@
       <workItem from="1654415485960" duration="13436000" />
       <workItem from="1654695553036" duration="12970000" />
       <workItem from="1654710908105" duration="3339000" />
-      <workItem from="1654752400703" duration="2620000" />
+      <workItem from="1654752400703" duration="14605000" />
+      <workItem from="1654845987137" duration="6000" />
+      <workItem from="1654931290712" duration="2286000" />
+      <workItem from="1654933632062" duration="5928000" />
     </task>
     <task id="LOCAL-00001" summary="Basically Complete Data Structure">
       <created>1654100225358</created>
@@ -291,7 +286,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654433198527</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="complete goodsManage ui &#10;write merchantManage service">
+      <created>1654755184206</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1654755184206</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -314,7 +316,8 @@
     <MESSAGE value="Add AdminService" />
     <MESSAGE value="complete login ui" />
     <MESSAGE value="complete merchantManage ui" />
-    <option name="LAST_COMMIT_MESSAGE" value="complete merchantManage ui" />
+    <MESSAGE value="complete goodsManage ui &#10;write merchantManage service" />
+    <option name="LAST_COMMIT_MESSAGE" value="complete goodsManage ui &#10;write merchantManage service" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
