@@ -33,10 +33,12 @@
     </script>
 </head>
 <body>
-<%! List<Goods> list; int i;%>
+<%! List<Goods> list; int i;
+List<Merchant> merchantList; int j;%>
 <% list = (List<Goods>) request.getAttribute("goodsList");
     i =0;
-
+    merchantList = (List<Merchant>) request.getAttribute("merchants");
+    j = 0;
 %>
 
 <script language="JavaScript" type="application/javascript">
@@ -170,10 +172,20 @@
                                     <span class="label">INFORMATION</span>
                                     <span class="focus-bg"></span>
                                 </label>
+
+                                <label for="belong-modify" class="inp">
+                                    <select id = "belong-modify" name="belong-option">
+                                        <%for(;j<merchantList.size();j++){%>
+                                        <%Merchant merchant = merchantList.get(j);%>
+                                            <option value="<%=merchant.getId()%>"><%=merchant.getName()%></option>
+                                        <%}%>
+                                    </select>
+                                    <span class="focus-bg"></span>
+                                </label>
                                 <input type="text" value="modify" name = "model" hidden>
-                                <input type="text" value="" name = "modifyId" id="getId" hidden>
-                                <input type="text" value="" name = "creator" id="getBelong2" hidden>
-                                <input type="text" value="" name = "picture" id="picture" hidden>
+                                <input type="text"  name = "modifyId" id="getId" hidden>
+                                <input type="text"  name = "creator" id="getBelong2" hidden>
+                                <input type="text"  name = "picture" id="picture" hidden>
                                 <button id = "btn_Modify" type="submit">Modify</button>
 
                             </form>
@@ -188,6 +200,9 @@
 
     </div>
 </div>
+<script>
+    console.log($("#getId").value)
+</script>
 <script src="js/goodsManage.js"></script>
 <script src="js/datatable.js"></script>
 </body>

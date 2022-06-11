@@ -16,4 +16,5 @@
     <update id="updateAdmin" parameterType="ztx.javaweb.bean.Admin">
         update admin set password = #{password} where name =#{name}
     </update>
+
 </mapper>

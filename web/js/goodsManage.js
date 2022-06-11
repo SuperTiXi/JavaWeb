@@ -10,8 +10,10 @@ $(".form-control").keydown(function (event) {
 })
 
 function modify(id,creator,picture,merchant) {
-        document.getElementById("getId").value = id;
-        document.getElementById("getBelong2").value = creator;
-        document.getElementById("picture").value = picture;
+        $("#modify-btn").attr("href","#popup-modify")
+        $("#getId").attr("value",id);
+        $("#getBelong2").attr("value",creator)
+        $("#picture").attr("value",picture)
+
 }
 

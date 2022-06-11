@@ -3,7 +3,6 @@ package ztx.javaweb.controller;
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
-import ztx.javaweb.bean.Merchant;
 import ztx.javaweb.service.MerchantService;
 
 import java.io.IOException;

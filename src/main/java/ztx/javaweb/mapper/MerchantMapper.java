@@ -42,4 +42,11 @@ public interface MerchantMapper {
      * @return 商家列表
      */
     public List<Merchant> getMerchants();
+
+
+    /**
+     * 获取所有商家id
+     * @return 商家id数组
+     */
+    public String[] getMerchantIds();
 }

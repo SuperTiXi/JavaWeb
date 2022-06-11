@@ -51,7 +51,7 @@
 
 <script language="JavaScript" type="application/javascript">
     function flash() {
-           location.href = "merchantManage?model="+"";
+           location.href = "merchantManage?model="+"init";
     }
 </script>
 

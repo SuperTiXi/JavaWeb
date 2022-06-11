@@ -33,4 +33,5 @@ public interface AdminMapper {
      * @return 是否成功
      */
     public boolean updateAdmin(Admin admin);
+
 }

@@ -4,6 +4,7 @@ import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
 import ztx.javaweb.bean.Goods;
+import ztx.javaweb.service.AdminService;
 import ztx.javaweb.service.MerchantService;
 import ztx.javaweb.util.StrUtil;
 
@@ -16,7 +17,9 @@ public class GoodsListServlet extends HttpServlet {
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         MerchantService merchantService = new MerchantService();
+        AdminService adminService = new AdminService();
 
+        req.setAttribute("merchants",adminService.getMerchants());
         String creator = (String) req.getSession().getAttribute("belong");
         req.setAttribute("belong",creator);
 
@@ -60,7 +63,7 @@ public class GoodsListServlet extends HttpServlet {
             String price = req.getParameter("price-input");
             float price_float = StrUtil.strToFloat(price);
             String info = req.getParameter("info-input");
-            String belong = creator;
+            String belong = req.getParameter("belong-option");
             String picture = req.getParameter("picture");
             Goods goods = new Goods(name,belong,price_float,info,picture,id_int);
             if(merchantService.updateGoods(goods)){
