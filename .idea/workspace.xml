@@ -9,52 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0fc8751-34ce-40f3-9aca-08d51f3f35d9" name="Changes" comment="complete merchantManage ui">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/JavaWeb_Web_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/JavaWeb_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/JavaWeb_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb_war_exploded/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb_war_exploded/WEB-INF/classes/mapper/AdminMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb_war_exploded/WEB-INF/classes/mapper/GoodsMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb_war_exploded/WEB-INF/classes/mapper/MerchantMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb_war_exploded/WEB-INF/classes/mybatis-config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb_war_exploded/WEB-INF/classes/mysql.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb_war_exploded/WEB-INF/classes/ztx/javaweb/bean/Admin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb_war_exploded/WEB-INF/classes/ztx/javaweb/bean/Goods.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb_war_exploded/WEB-INF/classes/ztx/javaweb/bean/Merchant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb_war_exploded/WEB-INF/classes/ztx/javaweb/controller/LoginServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb_war_exploded/WEB-INF/classes/ztx/javaweb/controller/MerchantServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb_war_exploded/WEB-INF/classes/ztx/javaweb/controller/RegisterServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb_war_exploded/WEB-INF/classes/ztx/javaweb/dao/AdminMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb_war_exploded/WEB-INF/classes/ztx/javaweb/dao/AdminMapperImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb_war_exploded/WEB-INF/classes/ztx/javaweb/dao/GoodsMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb_war_exploded/WEB-INF/classes/ztx/javaweb/dao/GoodsMapperImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb_war_exploded/WEB-INF/classes/ztx/javaweb/dao/MerchantMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb_war_exploded/WEB-INF/classes/ztx/javaweb/dao/MerchantMapperImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb_war_exploded/WEB-INF/classes/ztx/javaweb/mapper/AdminMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb_war_exploded/WEB-INF/classes/ztx/javaweb/mapper/AdminMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb_war_exploded/WEB-INF/classes/ztx/javaweb/mapper/GoodsMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb_war_exploded/WEB-INF/classes/ztx/javaweb/mapper/GoodsMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb_war_exploded/WEB-INF/classes/ztx/javaweb/mapper/MerchantMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb_war_exploded/WEB-INF/classes/ztx/javaweb/mapper/MerchantMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb_war_exploded/WEB-INF/classes/ztx/javaweb/service/AdminService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb_war_exploded/WEB-INF/classes/ztx/javaweb/service/MerchantService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb_war_exploded/WEB-INF/classes/ztx/javaweb/sql/GetSqlSession.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb_war_exploded/WEB-INF/classes/ztx/javaweb/test/SqlTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb_war_exploded/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb_war_exploded/css/googleapis.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb_war_exploded/css/login.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb_war_exploded/css/merchantManage.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb_war_exploded/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb_war_exploded/js/login.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb_war_exploded/js/merchantManage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb_war_exploded/login.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaWeb_war_exploded/merchantManage.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mysql.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mysql.properties" afterDir="false" />
-    </list>
+    <list default="true" id="e0fc8751-34ce-40f3-9aca-08d51f3f35d9" name="Changes" comment="修改了服务器配置" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -309,7 +264,7 @@
       <workItem from="1654710908105" duration="3339000" />
       <workItem from="1654752400703" duration="2620000" />
       <workItem from="1654936676885" duration="665000" />
-      <workItem from="1654937357887" duration="1905000" />
+      <workItem from="1654937357887" duration="2232000" />
     </task>
     <task id="LOCAL-00001" summary="Basically Complete Data Structure">
       <created>1654100225358</created>
@@ -339,7 +294,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654433198527</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="修改了服务器配置">
+      <created>1654939314781</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1654939314781</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -363,7 +325,8 @@
     <MESSAGE value="Add AdminService" />
     <MESSAGE value="complete login ui" />
     <MESSAGE value="complete merchantManage ui" />
-    <option name="LAST_COMMIT_MESSAGE" value="complete merchantManage ui" />
+    <MESSAGE value="修改了服务器配置" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改了服务器配置" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
