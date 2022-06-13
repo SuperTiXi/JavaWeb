@@ -91,6 +91,11 @@
                 <plugin>
                     <artifactId>maven-war-plugin</artifactId>
                     <version>3.2.2</version>
+                    <configuration>
+                        <!-- 设置WebContent目录为Web目录 -->
+                        <webappDirectory>web</webappDirectory>
+                        <warSourceDirectory>web</warSourceDirectory>
+                    </configuration>
                 </plugin>
                 <plugin>
                     <artifactId>maven-install-plugin</artifactId>

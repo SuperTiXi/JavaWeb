@@ -9,7 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0fc8751-34ce-40f3-9aca-08d51f3f35d9" name="Changes" comment="修改了服务器配置" />
+    <list default="true" id="e0fc8751-34ce-40f3-9aca-08d51f3f35d9" name="Changes" comment="fix bug:cannot modify goods">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/jakarta.servlet.jsp.jstl-2.0.0.jar" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,18 +50,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.20229885" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/IDEA-workspace/JavaWeb/web",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.3229885",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Angular Template"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\IDEA-workspace\JavaWeb\web\image" />
@@ -71,7 +73,7 @@
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 10.0.7">
-    <configuration name="SqlTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="SqlTest" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ztx.javaweb.test.SqlTest" />
       <module name="JavaWeb" />
       <extension name="coverage">
@@ -238,11 +240,6 @@
       <item itemvalue="Smart Tomcat.Smart Tomcat" />
       <item itemvalue="Tomcat Server.Tomcat 10.0.7" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.SqlTest" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -265,6 +262,10 @@
       <workItem from="1654752400703" duration="2620000" />
       <workItem from="1654936676885" duration="665000" />
       <workItem from="1654937357887" duration="2232000" />
+      <workItem from="1655110035892" duration="29000" />
+      <workItem from="1655125929384" duration="193000" />
+      <workItem from="1655127141199" duration="615000" />
+      <workItem from="1655127775840" duration="512000" />
     </task>
     <task id="LOCAL-00001" summary="Basically Complete Data Structure">
       <created>1654100225358</created>
@@ -317,7 +318,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
